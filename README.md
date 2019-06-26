@@ -20,3 +20,13 @@ Connect using filezilla
 Ideas:
 
 https://www.bitsaa.org/
+
+
+MYSQL details:
+const connectionPool = mysql.createPool({
+    connectionLimit : 500,
+    host: 'localhost',
+    user: 'root',
+    password: 'TUAA@10_jan',
+    database: 'tuaa'
+});
