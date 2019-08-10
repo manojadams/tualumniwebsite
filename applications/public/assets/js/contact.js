@@ -1,6 +1,6 @@
 $(document).ready(function ($) {
     
-    var contactapiUrl= "/contactus";
+    var contactapiUrl= "/rest/contactus";
     
         class contact {
         constructor(name, email, phoneno, subject,message) {

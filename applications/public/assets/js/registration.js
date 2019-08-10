@@ -2,8 +2,8 @@
 
 $(document).ready(function ($) {
     
-    var registerapiUrl= "/adduser";
-    var verifyemail="/verify";
+    var registerapiUrl= "/rest/adduser";
+    var verifyemail="/rest/verify";
     
         class register {
         constructor(name, email, phoneno,yearofpassing,department,course,curcountry,curcity,curorg,curdesignation) {

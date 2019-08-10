@@ -1,5 +1,5 @@
  $(document).ready(function ($) {
-    var membersapiUrl= "/getall";
+    var membersapiUrl= "/rest/getall";
 
     $.ajax({
         type: "GET",
