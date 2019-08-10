@@ -11,13 +11,13 @@ express.use(_express.static(__dirname+'/public'));
 express.use(bodyParser.json());
 
 express.get('/init',(req,res)=>{
-    setup.init();
+    //setup.init();
     res.status(403).send();
 });
 
-express.get('/getall',(req,res)=>{
+express.get('/rest/getall',(req,res)=>{
     //setup.init();
-        dbHandler.execQuery(`select * from userinfo;`)
+        dbHandler.execQuery(`select course,curdesignation,department,name,yearofpassing from userinfo;`)
         .then(row=>{
             let result={
                 allUser:row
@@ -31,7 +31,7 @@ express.get('/getall',(req,res)=>{
 });
 
 
-express.post('/adduser',(req,res)=>{
+express.post('/rest/adduser',(req,res)=>{
         let newUser=req.body;
         if(validateNecessaryParamsForNewUser(newUser)){
             dbHandler.execQuery(`insert into userinfo values (
@@ -62,7 +62,7 @@ express.post('/adduser',(req,res)=>{
     });
 
 
-express.post('/contactus',(req,res)=>{
+express.post('/rest/contactus',(req,res)=>{
     let queryInfo=req.body;
     if(validateNecessaryParamsForContactUS(queryInfo)){
         dbHandler.execQuery(`insert into userquery values (
@@ -88,7 +88,7 @@ express.post('/contactus',(req,res)=>{
 });
 
 
-express.get('/verify',(req,res)=>{
+express.get('/rest/verify',(req,res)=>{
     let queryInfo=req.body;
     if(true){
         dbHandler.execQuery(`select * from userinfo where email="${getSanitizedEmail(req)}"`)
@@ -114,7 +114,7 @@ express.get('/verify',(req,res)=>{
 
 
 
-express.listen(80);
+express.listen(8031);
 
 function getSanitizedEmail(req) {
     return req.query.email;
