@@ -31,3 +31,12 @@ const connectionPool = mysql.createPool({
     database: 'tuaa'
 });
 Mysql password2: root123
+
+Blog details:
+Engine Wordpress
+
+Administrator:
+User: root
+Password: tuaa@root123
+Email address: manoj.adams@gmail.com
+Location
