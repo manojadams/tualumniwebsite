@@ -39,4 +39,5 @@ Administrator:
 User: root
 Password: tuaa@root123
 Email address: manoj.adams@gmail.com
-Location
+Location: http://tuaa-blr.tezu.ernet.in:8031/blog/
+Login location: http://tuaa-blr.tezu.ernet.in:8031/blog/wp-admin
