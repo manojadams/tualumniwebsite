@@ -30,3 +30,4 @@ const connectionPool = mysql.createPool({
     password: 'TUAA@10_jan',
     database: 'tuaa'
 });
+Mysql password2: root123
