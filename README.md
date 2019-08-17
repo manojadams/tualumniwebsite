@@ -42,3 +42,8 @@ Location: http://tuaa-blr.tezu.ernet.in:8031/blog/
 Login location: http://tuaa-blr.tezu.ernet.in:8031/blog/wp-admin
 
 Config file location of php.ini: /etc/php.5.6/apache2/php.ini
+
+## Wordpress SMTP details
+### Gmail details (for WP Email SMTP plugin, for manoj.adams@gmail.com -- needs to change)
+Client ID: 524193138383-dk9ae7ma0c8pret032u5ii6sfto3nh4m.apps.googleusercontent.com
+Client Secret: 0BtHZnQeDPWyrVs4Y9s50YOx
