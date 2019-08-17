@@ -45,5 +45,6 @@ Config file location of php.ini: /etc/php.5.6/apache2/php.ini
 
 ## Wordpress SMTP details
 ### Gmail details (for WP Email SMTP plugin, for manoj.adams@gmail.com -- needs to change)
+Gmail API setup location for smtp: https://console.developers.google.com/apis/credentials?project=tuaa-blr-chaper
 Client ID: 524193138383-dk9ae7ma0c8pret032u5ii6sfto3nh4m.apps.googleusercontent.com
 Client Secret: 0BtHZnQeDPWyrVs4Y9s50YOx
